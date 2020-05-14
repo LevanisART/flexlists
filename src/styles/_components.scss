@@ -1307,14 +1307,14 @@
   .list-button {
     margin-left: 20px;
     background: #FFF;
-    padding: 13px 30px;
+    padding: 12px 30px 14px;
     border-radius: 9px;
     .icon {
       margin-right: 12px;
-      margin-top: -2px;
     }
     span {
       color: #27323E;
+      font-size: 13px;
       font-weight: 500;
     }
     &.filled {
