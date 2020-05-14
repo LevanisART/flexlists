@@ -1,5 +1,23 @@
 @import '../bootstrap/scss/bootstrap';
-@import 'variables';
+@import "variables";
+@import "outlinefocus";
+@import "typography";
+
+
+//layouts
+@import "layouts";
+
+//icons
+@import "line-awesome";
+
+//components
+@import "components";
+
+//responsive
+@import "responsive";
+
+
+
 @import 'mixins';
 @import 'media-queries';
 
@@ -17,3 +35,23 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 @include scrollbars(13px, rgb(42, 89, 175), #FFF);
+
+body {
+  background: #F5F6FA;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+// .wrapper {
+//   display: flex;
+// }
+
+// .sidebar {
+//   width: 250px;
+//   height: 100%;
+//   position: fixed;
+//   left: 0;
+//   top: 0;
+// }
