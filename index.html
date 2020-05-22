@@ -240,15 +240,24 @@
                       <button type="button" class="btn">Manage Fields</button>
                     </div>
                     <div class="settings ml-3">
-                      <a class="d-flex py-2" href="#">
-                        <div class="icon">
-                          <svg width="25" height="5" viewBox="0 0 25 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="2.5" cy="2.5" r="2.5" fill="#C0CDDE"/>
-                            <circle cx="12.5" cy="2.5" r="2.5" fill="#C0CDDE"/>
-                            <circle cx="22.5" cy="2.5" r="2.5" fill="#C0CDDE"/>
-                          </svg>                            
+
+                      <div class="dropdown mr-3">
+                        <a class="d-flex py-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <div class="icon">
+                            <svg width="25" height="5" viewBox="0 0 25 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="2.5" cy="2.5" r="2.5" fill="#C0CDDE"/>
+                              <circle cx="12.5" cy="2.5" r="2.5" fill="#C0CDDE"/>
+                              <circle cx="22.5" cy="2.5" r="2.5" fill="#C0CDDE"/>
+                            </svg>
+                          </div>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item py-2" href="#">Rename</a>
+                          <a class="dropdown-item py-2" href="#">Copy this list</a>
+                          <a class="dropdown-item py-2" href="#">Remove all items</a>
+                          <a class="dropdown-item py-2" href="#">Delete List</a>
                         </div>
-                      </a>
+                      </div>
                     </div>
                   </div>
                 </div>
