@@ -493,10 +493,10 @@
 .card {
   border-radius: 10px;
   background-color: $white-color;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border: none;
   .card-header {
-    padding: 15px 15px;
+    padding: 15px 20px;
     background-color: $transparent-bg;
     border-bottom: none !important;
   }
@@ -530,7 +530,7 @@
     margin-bottom: 0px;
   }
   .card-body {
-    padding: 15px 15px 10px 15px;
+    padding: 0 15px 10px 15px;
   }
   .card-footer {
     background-color: $transparent-bg;
@@ -1325,6 +1325,15 @@
       }
     }
   }
+  &.buttons-small {
+    .list-button {
+      margin-left: 0;
+      margin-right: 15px;
+      background: #FFF;
+      padding: 11px 18px 13px;
+      border-radius: 9px;
+    }
+  }
 }
 
 
@@ -1514,6 +1523,116 @@
     border-color: #ebedf2 !important;
     padding: 0.75rem !important;
   }
+  .edit {
+    border: 1px solid #EDF5FF;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+  .status {
+    display: flex;
+    align-items: center;
+    &::before {
+      content: '';
+      width: 7px;
+      height: 7px;
+      border-radius: 50rem;
+      background: $primary-color;
+      margin-right: 7px;
+    }
+    &.not-started {
+      &::before {
+        background-color: #FF9900;
+      }
+      span {
+        color: #FF9900;
+      }
+    }
+    &.done {
+      &::before {
+        background-color: #00B96D;
+      }
+      span {
+        color: #00B96D;
+      }
+    }
+    &.busy {
+      &::before {
+        background-color: #FF4646;
+      }
+      span {
+        color: #FF4646;
+      }
+    }
+  }
+}
+
+.dropdown .btn {
+  border: 1px solid #F3F5FD;
+  border-radius: 9px;
+  padding: 10px 10px 10px 15px;
+  color: #27323E;
+  font-weight: 500;
+  letter-spacing: .5px;
+  font-size: 13px;
+  background: #FFF;
+  &::after {
+    border: 0 ;
+  }
+}
+
+
+.dropdown-menu {
+  margin-top: 15px;
+  border-color: #F3F5FD;
+  border-radius: 9px;
+  min-width: 13rem;
+  .dropdown-item-text {
+    color: #9ca8b8;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .dropdown-item {
+    font-size: 13px;
+  }
+}
+
+.per-page {
+  .btn {
+    padding: 12px 10px 12px 15px;
+  }
+  .dropdown-menu {
+    min-width: 3rem;
+  }
+  .title {
+    color: #76809E;
+    font-size: 13px;
+  }
+}
+
+.input-group.search {
+  border: 1px solid #EEF0F6;
+  border-radius: 9px;
+  padding: 3px 15px;
+  .form-control {
+    &::placeholder {
+      color: #9CA8B8;
+      opacity: 1;
+    }
+    font-size: 13px;
+  }
+}
+
+.manage .btn {
+  border: 1px solid #EDF5FF;
+  background: #F9FAFF;
+  color: $primary-color;
+  border-radius: 9px;
+  font-size: 13px;
+  padding: 9px 20px 11px;
 }
 
 /* table full-width */
